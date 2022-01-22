@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
+## DB 비밀번호 변경 해서 사용할 것 !
 from pymongo import MongoClient
 client = MongoClient('mongodb+srv://SEOKMINJI:#######@cluster0.xo55a.mongodb.net/Cluster0?retryWrites=true&w=majority')
 db = client.my_bucketlist
